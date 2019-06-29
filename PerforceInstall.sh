@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Human readable process
 DownloadPerforce
