@@ -1,7 +1,9 @@
 
 # P4Install - Simple Perforce Helix setup
+```html
 <p color="#FF0000">Test</p>
 <span style="color:blue">some *blue* text</span>
+```
 
 P4Install provides a semi-automated way to install Perforce Helix on linux based servers and NAS (such as DiskStation).
 
