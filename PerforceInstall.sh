@@ -6,7 +6,7 @@ DownloadPerforce()
 	printf "\e[31mPlease provide an ftp link to the perforce version you would like to install.\e[39m\nYou can find them here: ftp://ftp.perforce.com/perforce/"
 	printf "\nOr press enter to use the following version: ftp://ftp.perforce.com/perforce/r19.1/bin.linux26x86_64/"
 
-	printf "\n\e[32m------------------- Input Section -------------------\e[39m"
+	printf "\n\e[32m------------------- Input Section -------------------\e[39m\n"
 	read sourceVar
 	if [ -z "$sourceVar" ]
 	then
@@ -32,7 +32,7 @@ CreateUser()
 CreateDepot()
 {
 	printf "\n\e[31mChoose a path for the depot. Or press enter to use /p4depot as the depot root path.\e[39m"
-	printf "\n\e[32m------------------- Input Section -------------------\e[39m"
+	printf "\n\e[32m------------------- Input Section -------------------\e[39m\n"
 	read depotPath
 	if [ -z "$depotPath" ]
 	then
@@ -67,7 +67,7 @@ Finished()
 {
 	printf "\n\e[32m
 	Finished setup. Please follow the guide to finish the setup	\e[39m\n
-	Your Server will now reboot. Perforce should start automatically after the reboot.	\e[39m"
+	Your Server will now reboot. Perforce should start automatically after the reboot.	\e[39m\n"
 	read -s -r -p "Press any key to continue"
 }
 
