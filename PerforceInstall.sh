@@ -33,10 +33,7 @@ sudo chown perforce $depotPath
 sudo mkdir /var/log/perforce
 sudo chown perforce /var/log/perforce
 
-fullDepotPath="$PWD""$depotPath"
-echo $fullDepotPath
-
-echo "/usr/local/bin/p4d -r $fullDepotPath -J /var/log/p4d.log" > "PerforceAutoStartServer"
+echo "/usr/local/bin/p4d -r $depotPath -J /var/log/p4d.log" > "PerforceAutoStartServer"
 chmod +x PerforceAutoStartServer
 sudo mv PerforceAutoStartServer /usr/local/bin
 
