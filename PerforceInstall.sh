@@ -4,7 +4,7 @@
 DownloadPerforce() 
 {
 	printf "\e[31mPlease provide an ftp link to the perforce version you would like to install.\e[39m\nYou can find them here: ftp://ftp.perforce.com/perforce/"
-	printf "\nOr press enter to use the following version: ftp://ftp.perforce.com/perforce/r19.1/bin.linux26x86_64/"
+	printf "\nOr press \e[32mEnter\e[39m to use the following version: ftp://ftp.perforce.com/perforce/r19.1/bin.linux26x86_64/"
 
 	printf "\n\e[32m------------------- Input Section -------------------\e[39m\n"
 	read sourceVar
@@ -14,7 +14,7 @@ DownloadPerforce()
 
 	fi
 	printf "\n\e[32m---------------- End of Input Section ---------------\e[39m"
-	printf "\n\e[31mYou chose to install: \n$sourceVar\e[39m"
+	printf "\n\e[31mYou chose to install: \n$sourceVar\e[39m\n"
 	wget $sourceVar'p4d'
 	chmod +x p4d
 	wget $sourceVar'p4'
@@ -25,7 +25,7 @@ DownloadPerforce()
 
 CreateUser()
 {
-	printf "\n\e[31m\nCreating a new User called Perforce as a security measure.\nPlease provide a password for the new user!\e[39m"
+	printf "\n\e[31m\nCreating a new User called Perforce as a security measure.\nPlease provide a password for the new user!\e[39m\n"
 	sudo adduser perforce --gecos "First Last,RoomNumber,WorkPhone,HomePhone"
 }
 
@@ -66,9 +66,8 @@ SetupAutostart()
 Finished()
 {
 	printf "\n\e[32m
-	Finished setup. Please follow the guide to finish the setup	\e[39m\n
-	Your Server will now reboot. Perforce should start automatically after the reboot.	\e[39m\n"
-	read -s -r -p "Press any key to continue"
+	Finished setup. Please follow the guide to finish the setup	\e[39m\n"
+	printf "\e[32mYour Server will now reboot. Perforce should start automatically after the reboot.	\e[39m\n"
 }
 
 Reboot()
