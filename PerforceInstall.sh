@@ -9,7 +9,7 @@ then
 	sourceVar=ftp://ftp.perforce.com/perforce/r19.1/bin.linux26x86_64/
 fi
 echo "---------------- End of Input Section ---------------"
-#echo $sourceVar'p4d'
+echo $sourceVar'p4d'
 wget $sourceVar'p4d'
 chmod +x p4d
 wget $sourceVar'p4'
@@ -26,20 +26,33 @@ then
 	depotPath="/p4depot"
 fi
 echo "---------------- End of Input Section ---------------"
-#echo $depotPath
 
+echo $depotPath
 sudo mkdir $depotPath
 sudo chown perforce $depotPath
 sudo mkdir /var/log/perforce
 sudo chown perforce /var/log/perforce
-echo "The following command might throw warnings or errors. If so, proceed as normal and check whether everything runs fine at the end."
-sudo apt-get install daemon
+
+fullDepotPath="$PWD""$depotPath"
+echo $fullDepotPath
+
+echo "/usr/local/bin/p4d -r $fullDepotPath -J /var/log/p4d.log" > "PerforceAutoStartServer"
+chmod +x PerforceAutoStartServer
+sudo mv PerforceAutoStartServer /usr/local/bin
+
+echo "@reboot /usr/local/bin/PerforceAutoStartServer" > "PerforceCronJob"
+chmod +x PerforceCronJob
+sudo mv PerforceCronJob /etc/cron.d/
+
+# Obsolete ?
+#echo "The following command might throw warnings or errors. If so, proceed as normal and check whether everything runs fine at the end."
+#sudo apt-get install daemon
 # One possible way to do it.
 #cd /etc/init.d
 #wget p4AutoStartServ
 #chmod +x /etc/init.d/p4AutoStartServ
 #sudo update-rc.d p4AutoStartServ defaults
-#Other possible way would be by creating a cron job.
+
 echo "Your Server will now reboot. Perforce should start automatically after the reboot."
 echo "Reboot in 5..."
 sleep 1
