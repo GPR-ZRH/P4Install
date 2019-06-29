@@ -1,13 +1,4 @@
-#!/bin/bash
-
-# Human readable process
-DownloadPerforce
-CreateUser
-CreateDepot
-CreateLog
-SetupAutostart
-Finished
-Reboot
+#!/bin/sh
 
 # Functions
 DownloadPerforce() 
@@ -94,3 +85,12 @@ Reboot()
 	sleep 1
 	sudo reboot
 }
+
+# Human readable process
+DownloadPerforce
+CreateUser
+CreateDepot
+CreateLog
+SetupAutostart
+Finished
+Reboot
