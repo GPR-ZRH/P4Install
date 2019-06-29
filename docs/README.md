@@ -48,13 +48,18 @@ or:
 
 Follow the instructions given by the script. Important information is written in red.
 
-### 3. Create a Perforce Administrator User
+### 3. Create a Perforce superuser
 After the server reboot. You will be able to login to your server using P4V or P4Admin.
 - Start P4Admin
 - Enter the server IP address followed by :1666 (Format Example: `0.0.0.0:1666`)
-- Click on new user
+- Press Alt + N followed by Enter or click on the new... button next to the user field.
 - A Window should pop-up requesting information to create the new user.
 - When finished, click connect
+![P4Admin Connect Window](/docs/images/P4Admin_AddUser.png)
+![P4Admin Create User Window](/docs/images/P4Admin_AddUser2.png)
+
+
+If you already have other perforce servers setup in P4Admin and you find yourself in the main view, press ctrl + O to open a new connection.
 
 You will see yet another window pop-up clarifying that this user will become the sole super-user (Administrator / All rights)
 - Accept
