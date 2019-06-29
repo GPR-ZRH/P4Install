@@ -55,9 +55,10 @@ After the server reboot. You will be able to login to your server using P4V or P
 - Press Alt + N followed by Enter or click on the new... button next to the user field.
 - A Window should pop-up requesting information to create the new user.
 - When finished, click connect
-![P4Admin Connect Window](/docs/images/P4Admin_AddUser.png)
-![P4Admin Create User Window](/docs/images/P4Admin_AddUser2.png)
 
+![P4Admin Connect Window](/docs/images/P4Admin_AddUser.png)
+
+![P4Admin Create User Window](/docs/images/P4Admin_AddUser2.png)
 
 If you already have other perforce servers setup in P4Admin and you find yourself in the main view, press ctrl + O to open a new connection.
 
