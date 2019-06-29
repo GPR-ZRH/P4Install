@@ -1,4 +1,8 @@
+
 # P4Install - Simple Perforce Helix setup
+<p color="#FF0000">Test</p>
+<span style="color:blue">some *blue* text</span>
+
 P4Install provides a semi-automated way to install Perforce Helix on linux based servers and NAS (such as DiskStation).
 
 This repository provides guides and scripts that will help you get a Perforce Server up an running within minutes. You will be guided through the use of the scripts with code snippets and a step-by-step guide. The Master branch provides the main functionality of P4Install. Checkout other Branches for specfic server providers or tools. 
@@ -20,3 +24,4 @@ While it would be possible to create an fully automated script, this semi-automa
 
 ### 2. Install Perforce
 
+    wget 
