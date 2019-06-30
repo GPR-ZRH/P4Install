@@ -10,7 +10,6 @@ secLevel=-1
 while [ true ]
 do
 	read secLevel
-	echo $secLevel"\n"
 	if [ $secLevel -ge 0 ] && [ $secLevel -lt 7 ]
 		then
 			break
