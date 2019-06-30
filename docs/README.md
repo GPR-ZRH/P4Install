@@ -29,7 +29,7 @@ While it would be possible to create an fully automated script, this semi-automa
 
  If you do not want your depot to be placed on the droplets main disk but rather on a seperate volume (Which exists seperately from the droplet itself), then execute the following code and follow the instructions presented to you by the script.
  It will ask you for the name of the volume you would like to use. So you need to create the volume beforehand on the DigitalOcean website.
- This script does the same as you could do manually by going clicking here:
+ This script does the same as you could do manually by clicking here:
 
 ![DigitalOcean volume config](/docs/images/DO_VolumeConfig.png)
 
