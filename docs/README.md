@@ -16,9 +16,9 @@ While it would be possible to create an fully automated script, this semi-automa
  - The absolute path to where the perforce depot should be placed.
  - PuTTY https://www.putty.org
  - Helix Core Apps
-       - P4V
-       - P4Admin
-       - P4 (Command Line Interface)
+	- P4V
+	- P4Admin
+	- P4 (Command Line Interface)
 
 ### 1. Connect to server
  - Start PuTTY
