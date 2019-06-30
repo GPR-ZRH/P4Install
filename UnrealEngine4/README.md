@@ -46,7 +46,7 @@ If you place the .p4ignore file inside a folder it will only affect this folder.
 
 It would be nice if we did not have to use a command line interface for once, but unfortunately we need to make sure perforce actually uses the .p4ignore file(s).
 
-Start you CMD or terminal and enter the following:
+Start your CMD or terminal and enter the following:
 
 ```
 	p4 set P4IGNORE=.p4ignore
@@ -54,7 +54,9 @@ Start you CMD or terminal and enter the following:
 ```
 **Every user has to run the above command on every machine he uses.**
 If this is not enough to please you, take a look at https://www.perforce.com/manuals/p4sag/Content/P4SAG/protections.set.html
-You can do the same as inside a p4ignore file, but on the server instead of each client. I might add a shell script at a later time.
+
+You can do the same as inside a p4ignore file, but on the server instead of each client.
+I might add a shell script at a later time.
 
 ### 4. Enjoy
 Have fun :)
