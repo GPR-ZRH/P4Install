@@ -23,15 +23,18 @@ While it would be possible to create an fully automated script, this semi-automa
 ### 1. Connect to server
  - Start PuTTY
  - Fill in your servers IP address, port should be 22 (ssh default port) but there is a possibility it needs to be changed (should be provided by server provider if different. In home server or NAS setups it depends on your port forwarding rules)
- - Sign in as a user with root privileges
+ - Sign-in as a user with root privileges
+
+![P4Admin Create User Window](/docs/images/P4Admin_AddUser2.png)
 
 ### 2. Install Perforce
-When using a linux that has wget installed.
+When using a linux distro that has wget installed.
 
 ```
     wget public-URL-to-InstallScript
     chmod +x PerforceInstall.sh
     ./PerforceInstall.sh
+
 ```
 
 If wget is not installed try the following:
@@ -62,10 +65,24 @@ After the server reboot. You will be able to login to your server using P4V or P
 
 If you already have other perforce servers setup in P4Admin and you find yourself in the main view, press ctrl + O to open a new connection.
 
-You will see yet another window pop-up clarifying that this user will become the sole super-user (Administrator / All rights)
+You will see yet another window pop-up clarifying that this user will become the sole superuser (Administrator / All rights)
 - Accept
 - Add any user you would like, create groups, assign permissions, etc.
 
 ### 4. Security measures
 Perforce in its default configuration will allow anyone with access to the server (knowing the IP address) to create a new user.
+Connect to the server again using PuTTY (Your previous connection went inactive when the server rebooted).
+Login as before and run the following:
 
+```
+    wget public-URL-to-SecurityScript
+    chmod +x PerforceSecurity.sh
+    ./PerforceSecurity.sh
+	
+```
+This will disallow automatic user creation, viewing of the available users and viewing of the configs.
+It will also ask you to decide upon the use of passwords vs tickets and if applicaple the password strength.
+
+### 5. Enjoy
+Have fun :)
+Check out the other branches if you need your server to be setup in a specific way (for example to host Unreal Engine 4 Projects).
