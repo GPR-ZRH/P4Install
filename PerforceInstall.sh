@@ -58,7 +58,7 @@ SetupAutostart()
 	chmod +x PerforceAutoStartServer
 	sudo mv PerforceAutoStartServer /usr/local/bin
 	printf "\n\e[31mCreating cronjob that runs the startup script on reboot\e[39m"
-	echo "@reboot /usr/local/bin/PerforceAutoStartServer" > "PerforceCronJob"
+	echo "@reboot root /usr/local/bin/PerforceAutoStartServer" > "PerforceCronJob"
 	chmod +x PerforceCronJob
 	sudo mv PerforceCronJob /etc/cron.d/
 }
