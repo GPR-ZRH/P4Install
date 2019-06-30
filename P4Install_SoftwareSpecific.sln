@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnrealEngine4", "UnrealEngine4", "{57595E65-AD63-453A-94F6-BD834F689474}"
+	ProjectSection(SolutionItems) = preProject
+		UnrealEngine4\.p4ignore = UnrealEngine4\.p4ignore
+		UnrealEngine4\PerforceTypemap.sh = UnrealEngine4\PerforceTypemap.sh
+		UnrealEngine4\README.md = UnrealEngine4\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{11AC0D28-7EBB-4853-A791-8ED441AC4096}"
+	ProjectSection(SolutionItems) = preProject
+		docs\LICENSE = docs\LICENSE
+		docs\README.md = docs\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9EF20DFD-2532-480D-8152-4281CD2D720D}
+	EndGlobalSection
+EndGlobal
