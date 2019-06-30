@@ -8,7 +8,7 @@ This repository provides guides and scripts that will help you get a Perforce Se
 While it would be possible to create an fully automated script, this semi-automated way is more customizable and future proof. It allows you to manually specify which version to install, where to place the depot and increases security by seperating the perforce server from the root user.
 
 
-## Generic step-by-step guide
+## DigitalOcean step-by-step guide
 ### 0. Prerequisites
  - Server IP address
  - Password for the root user (and username if not root)
@@ -26,6 +26,20 @@ While it would be possible to create an fully automated script, this semi-automa
  - Sign-in as a user with root privileges
 
 ![PuTTY Main Window](/docs/images/Putty.png)
+
+ If you do not want your depot to be placed on the droplets main disk but rather on a seperate volume (Which exists seperately from the droplet itself), then execute the following code and follow the instructions presented to you by the script.
+ It will ask you for the name of the volume you would like to use. So you need to create the volume beforehand on the DigitalOcean website.
+ This script does the same as you could do manually by going clicking here:
+
+![DigitalOcean volume config](/docs/images/DO_VolumeConfig.png)
+
+ ```
+    wget public-URL-to-DigitalOceanMountVolumeScript
+    chmod +x MountVolume.sh
+    ./MountVolume.sh
+
+```
+![DigitalOcean droplet view](/docs/images/DO_DropletView.png)
 
 ### 2. Install Perforce
 When using a linux distro that has wget installed.
