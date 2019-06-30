@@ -10,8 +10,8 @@ secLevel=-1
 while [ true ]
 do
 	read secLevel
-	echo $secLevel
-	if [[ $secLevel -ge 0 && $secLevel -lt 7 ]]
+	echo $secLevel"\n"
+	if [ $secLevel -ge 0 ] && [ $secLevel -lt 7 ]
 		then
 			break
 	else
@@ -20,14 +20,14 @@ do
 done
 p4 configure set security=$secLevel
 printf "Security level set to $secLevel\n"
-if [[ $secLevel -gt 0 && $secLevel -lt 3 ]]
+if [ $secLevel -gt 0 ] && [ $secLevel -lt 3 ]
 	then
 	printf "Provide a minimum password length (at least 8 characters recommended)\nPress \e[32mEnter\e[39m to use the default value of 12 characters.\nAccepted range is 6-1024 characters.\n"
 	pwdLength=0
 	while [ true ]
 		do
 			read pwdLength
-			if [[ $pwdLength -ge 6 && $pwdLength -le 1024 ]]
+			if [ $pwdLength -ge 6 ] && [ $pwdLength -le 1024 ]
 			then
 				break
 			else
