@@ -10,7 +10,8 @@ secLevel=-1
 while [ true ]
 do
 	read secLevel
-	if (( $secLevel > -1 && $secLevel < 7 ))
+	echo $secLevel
+	if (( $secLevel >= 0 && $secLevel < 7 ))
 		then
 			break
 	else
