@@ -15,7 +15,7 @@ While it would be possible to create an fully automated script, this semi-automa
  - A Password for the perforce user that will be created
  - The absolute path to where the perforce depot should be placed.
  - PuTTY https://www.putty.org
- - Helix Visual Client (P4V)
+ - Helix Core Apps
        - P4V
        - P4Admin
        - P4 (Command Line Interface)
