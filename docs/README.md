@@ -1,4 +1,4 @@
-[Return to Master Branch](../master)
+[Return to Master Branch](../../master)
 
 
 # P4Install - Post setup configuration for specific projctes
