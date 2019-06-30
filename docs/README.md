@@ -1,6 +1,6 @@
 
-# P4Install - Simple Perforce Helix 
-**Work in progress**
+# P4Install - Simple Perforce Helix installation
+**Work in progress  may not yet work flawless - please search the issues or create a new one if you experience a problem**
 
 P4Install provides a semi-automated way to install Perforce Helix on linux based servers and NAS (such as DiskStation).
 
@@ -25,7 +25,7 @@ While it would be possible to create an fully automated script, this semi-automa
  - Fill in your servers IP address, port should be 22 (ssh default port) but there is a possibility it needs to be changed (should be provided by server provider if different. In home server or NAS setups it depends on your port forwarding rules)
  - Sign-in as a user with root privileges
 
-![P4Admin Create User Window](/docs/images/P4Admin_AddUser2.png)
+![PuTTY Main Window](/docs/images/Putty.png)
 
 ### 2. Install Perforce
 When using a linux distro that has wget installed.
