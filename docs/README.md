@@ -68,6 +68,7 @@ If you already have other perforce servers setup in P4Admin and you find yoursel
 You will see yet another window pop-up clarifying that this user will become the sole superuser (Administrator / All rights)
 - Accept
 - Add any user you would like, create groups, assign permissions, etc.
+![Perforce sole superuser window](/docs/images/P4Admin_SoleSuperuser.png)
 
 ### 4. Security measures
 Perforce in its default configuration will allow anyone with access to the server (knowing the IP address) to create a new user.

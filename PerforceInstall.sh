@@ -65,9 +65,8 @@ SetupAutostart()
 
 Finished()
 {
-	printf "\n\e[32m
-	Finished setup. Please follow the guide to finish the setup	\e[39m\n"
-	printf "\e[32mYour Server will now reboot. Perforce should start automatically after the reboot.	\e[39m\n"
+	printf "\n\e[32m\nFinished setup. Please follow the guide to finish the setup\e[39m\n"
+	printf "\e[32mYour Server will now reboot. Perforce should start automatically from now on.\e[39m\n"
 }
 
 Reboot()
