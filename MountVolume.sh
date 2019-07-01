@@ -1,6 +1,6 @@
 #!/bin/sh
 
-printf "\e[31mPlease enter the name of your volume as presented on the digitalocean website -> Droplets -> Volumes\e[39m"
+printf "\e[31mPlease enter the name of your volume as presented on the digitalocean website -> Droplets -> Volumes\e[39m\n"
 read volumeName
 
 # Create a mount point for your volume:
