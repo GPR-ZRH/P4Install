@@ -1,9 +1,10 @@
 #!/bin/sh
 
 printf "\e[31mPlease enter the name of your volume as presented on the digitalocean website -> Droplets -> Volumes\e[39m\n"
+
 read volumeName
 
-printf "Create a mount point for your volumeat /mnt/$volumeName\n"
+printf "Create a mount point for your volume at /mnt/$volumeName\n"
 mkdir -p "/mnt/$volumeName"
 
 # Mount your volume at the newly-created mount point:
