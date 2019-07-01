@@ -14,8 +14,7 @@ GetDepotName()
 
 WriteMappings()
 {
-	echo 
-	"
+	echo	"
                 binary+S2w //$depotName/....exe
                 binary+S2w //$depotName/....dll
                 binary+S2w //$depotName/....lib
@@ -43,8 +42,8 @@ WriteMappings()
 CreateTypemap()
 {
 	GetDepotName
-	echo 
-	"
+cat <<EOT > tmpTypemap
+
 # Perforce File Type Mapping Specifications.
 #
 #  TypeMap:             a list of filetype mappings; one per line.
@@ -57,15 +56,18 @@ CreateTypemap()
 # See 'p4 help typemap' for more information.
 
 TypeMap:
-" > tmpTypemap
-	WriteMappings
-	p4 typemap -i < tmpTypemap
+EOT
+
+WriteMappings
+p4 typemap -i < tmpTypemap
 }
 
 AppendTypemap()
 {
-	WriteMappings
-	p4 typemap -i << tmpTypemap
+GetDepotName
+p4 typemap -o > tmpTypemap
+WriteMappings
+p4 typemap -i < tmpTypemap
 }
 
 
