@@ -7,6 +7,7 @@ P4Install provides a semi-automated way to install Perforce Helix on linux based
 This repository provides guides and scripts that will help you get a Perforce Server up an running within minutes. You will be guided through the use of the scripts with code snippets and a step-by-step guide. The Master branch provides the generic functionality of P4Install. Checkout other Branches for specfic server providers or tools. 
 While it would be possible to create an fully automated script, this semi-automated way is more customizable and future proof. It allows you to manually specify which version to install, where to place the depot and increases security by seperating the perforce server from the root user.
 
+**Browse through the branches to find provider specific guides. There's only one available at the moment, but more will follow. Use the issues to create a new request if you want to have a guide for a specific provider.**
 
 ## Generic step-by-step guide
 ### 0. Prerequisites
