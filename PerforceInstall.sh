@@ -7,12 +7,19 @@ DownloadPerforce()
 	printf "\nOr press \e[32mEnter\e[39m to use the following version: ftp://ftp.perforce.com/perforce/r19.1/bin.linux26x86_64/"
 
 	printf "\n\e[32m------------------- Input Section -------------------\e[39m\n"
-	read sourceVar
-	if [ -z "$sourceVar" ]
-	then
-		sourceVar=ftp://ftp.perforce.com/perforce/r19.1/bin.linux26x86_64/
 
-	fi
+	while [ true ]
+	do
+		read sourceVar
+		if [ -z "$sourceVar" ] || [ ${#sourceVar} -lt 7 ] 
+		then
+			sourceVar=ftp://ftp.perforce.com/perforce/r19.1/bin.linux26x86_64/
+			break
+		else
+			printf "Invalid Input. Try again!\n"			
+		fi
+	done
+
 	printf "\n\e[32m---------------- End of Input Section ---------------\e[39m"
 	printf "\n\e[31mYou chose to install: \n$sourceVar\e[39m\n"
 	wget $sourceVar'p4d'
