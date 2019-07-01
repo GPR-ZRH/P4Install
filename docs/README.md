@@ -33,11 +33,10 @@ While it would be possible to create an fully automated script, this semi-automa
 
 ![DigitalOcean volume config](/docs/images/DO_VolumeConfig.png)
 
- ```
-    wget public-URL-to-DigitalOceanMountVolumeScript
-    chmod +x MountVolume.sh
-    ./MountVolume.sh
-
+```
+wget public-URL-to-DigitalOceanMountVolumeScript
+chmod +x MountVolume.sh
+./MountVolume.sh
 ```
 ![DigitalOcean droplet view](/docs/images/DO_DropletView.png)
 
@@ -45,10 +44,9 @@ While it would be possible to create an fully automated script, this semi-automa
 When using a linux distro that has wget installed.
 
 ```
-    wget public-URL-to-InstallScript
-    chmod +x PerforceInstall.sh
-    ./PerforceInstall.sh
-
+wget public-URL-to-InstallScript
+chmod +x PerforceInstall.sh
+./PerforceInstall.sh
 ```
 
 If wget is not installed try the following:
