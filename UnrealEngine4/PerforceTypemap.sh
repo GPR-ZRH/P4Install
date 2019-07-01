@@ -76,7 +76,7 @@ do
 		then
 			CreateTypemap
 			break
-	else if [ "$action" == "a" ]
+	elif [ "$action" == "a" ]
 		then
 			AppendTypemap
 			break
