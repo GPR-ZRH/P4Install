@@ -1,6 +1,6 @@
 [Return to Master Branch](../../../tree/master)
 
-# P4Install - Post setup configuration for Unreal Engine 4 projctes
+# P4Install - Post setup configuration for Unreal Engine 4 projectes
 **Work in progress  may not yet work flawlessly - please search the issues or create a new one if you experience a problem**
 
 After you have installed Perforce Helix and setup your users, you are ready to go.. But wait.. there is more to it.
