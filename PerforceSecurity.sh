@@ -3,7 +3,7 @@
 p4 set P4PORT=localhost:1666
 printf "\e[31mPlease provide the username of the superuser you created.\e[39m\n"
 read adminUser
-p4 set P4User=adminUser
+p4 set P4USER=$adminUser
 printf "\e[31mYou will now be asked to provide the password of your superuser.\n\e[39mIt does not get saved on the server.\n"
 p4 configure set dm.user.noautocreate=2
 p4 configure set run.users.authorize=1
