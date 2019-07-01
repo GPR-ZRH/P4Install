@@ -45,7 +45,8 @@ CreateDepot()
 	then
 		depotPath="/p4depot"
 	else
-		if [ ${depotPath:0:1} != "/" ]
+	firstChar=${depotPath:0:1}
+		if [ $firstChar != "/" ]
 		then
 			depotPath="/"$depotPath
 		fi
