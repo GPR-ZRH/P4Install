@@ -28,7 +28,7 @@ This makes it way easier if you want do have a hassle and pain free experience (
 The Typemap tells perforce how it should handle different file types. This is important so perforce (as an example) does not lock dll files and prevent you from building your project when using C++.
 
 ```
-wget public-URL-to-TypeMapScript
+wget https://raw.githubusercontent.com/GPR-ZRH/P4Install/SoftwareSpecific/UnrealEngine4/PerforceTypemap.sh
 chmod +x PerforceTypemap.sh
 ./PerforceTypemap.sh
 ```
