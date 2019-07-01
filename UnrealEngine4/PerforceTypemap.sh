@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 printf "\e[31mWould you like to create a new typemap file (this will replace an existing one) or append to the existing?\n\e[39m"
 printf "Enter \e[32mc\e[39m to create a new one and \e[32ma\e[39m to append to an existing typemap!\n"
