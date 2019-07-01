@@ -2,7 +2,7 @@
 # P4Install - Simple Perforce Helix installation
 **Work in progress  may not yet work flawlessly - please search the issues or create a new one if you experience a problem**
 
-**This guide has been tested on 01 of July 2019. While it worked fine for me, it's still not garantueed to work for everyone. Please let me now if you run into trouble.**
+**This guide has been tested on 01. of July 2019. While it worked fine for me, it's still not garantueed to work for everyone. Please let me now if you run into trouble.**
 
 P4Install provides a semi-automated way to install Perforce Helix on linux based servers and NAS (such as DiskStation).
 
