@@ -8,3 +8,6 @@ After you have installed Perforce Helix and setup your users, you are ready to g
 Browse through the folders to find the main software you will use in connection with perforce helix.
 This readme only serves as a general introduction as to how you can use the folders within this branch.
 Have fun!
+
+
+Please fork and create your own Software Specific Setups and then make a pull request. Or if you are not a programmer, simply create an request in the issues tab.
