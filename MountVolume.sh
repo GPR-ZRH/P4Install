@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 printf "\e[31mPlease enter the name of your volume as presented on the digitalocean website -> Droplets -> Volumes\e[39m\n"
 printf "\e[31mDO NOT COPY! Write it.. copy and paste may introduce errors if line endings get copied too.\e[39m\n"

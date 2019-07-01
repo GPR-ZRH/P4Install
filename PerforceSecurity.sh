@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 p4 set P4PORT=localhost:1666
 printf "\e[31mPlease provide the username of the superuser you created.\e[39m\n"
