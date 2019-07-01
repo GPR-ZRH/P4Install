@@ -3,13 +3,17 @@
 printf "\e[31mWould you like to create a new typemap file (this will replace an existing one) or append to the existing?\n\e[39m"
 printf "Enter \e[32mc\e[39m to create a new one and \e[32ma\e[39m to append to an existing typemap!\n"
 
-depotName="depot"
+depotName=""
 
 GetDepotName()
 {
-	printf "\e[31Please provide the depot name. If nothing is provided it will asume the default depot name \'depot\'.\n\e[39m"
+	printf "\e[31mPlease provide the depot name. If nothing is provided it will asume the default depot name \'depot\'.\n\e[39m"
 	printf "You can also provide the path to a folder within a depot. This will apply the settings to the specified folder only.\n"
 	read depotName
+	if [ -z "$depotName" ] || [ ${#depotName} -lt 3 ]
+	then
+		depotName="depot"
+	fi
 }
 
 WriteMappings()
