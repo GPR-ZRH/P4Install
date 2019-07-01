@@ -47,7 +47,7 @@ If your projects are not large in size, you can get away really cheap. We are ta
 ![DigitalOcean volume config](/docs/images/DO_VolumeConfig.png)
 
 ```
-wget public-URL-to-DigitalOceanMountVolumeScript
+wget https://raw.githubusercontent.com/GPR-ZRH/P4Install/digitalocean/MountVolume.sh
 chmod +x MountVolume.sh
 ./MountVolume.sh
 ```
@@ -57,7 +57,7 @@ chmod +x MountVolume.sh
 When using a linux distro that has wget installed.
 
 ```
-wget public-URL-to-InstallScript
+wget https://raw.githubusercontent.com/GPR-ZRH/P4Install/digitalocean/PerforceInstall.sh
 chmod +x PerforceInstall.sh
 ./PerforceInstall.sh
 ```
@@ -101,7 +101,7 @@ Connect to the server again using PuTTY (Your previous connection went inactive 
 Login as before and run the following:
 
 ```
-wget public-URL-to-SecurityScript
+wget https://raw.githubusercontent.com/GPR-ZRH/P4Install/digitalocean/PerforceSecurity.sh
 chmod +x PerforceSecurity.sh
 ./PerforceSecurity.sh	
 ```
