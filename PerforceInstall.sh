@@ -33,7 +33,8 @@ DownloadPerforce()
 CreateUser()
 {
 	printf "\n\e[31m\nCreating a new User called Perforce as a security measure.\nPlease provide a password for the new user!\e[39m\n"
-	sudo adduser perforce --gecos "First Last,RoomNumber,WorkPhone,HomePhone"
+	sudo adduser perforce -c "Perforce User, , , "
+	sudo passwd perforce
 }
 
 CreateDepot()
