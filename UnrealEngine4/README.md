@@ -28,10 +28,9 @@ This makes it way easier if you want do have a hassle and pain free experience (
 The Typemap tells perforce how it should handle different file types. This is important so perforce (as an example) does not lock dll files and prevent you from building your project when using C++.
 
 ```
-    wget public-URL-to-TypeMapScript
-    chmod +x PerforceTypemap.sh
-    ./PerforceTypemap.sh
-
+wget public-URL-to-TypeMapScript
+chmod +x PerforceTypemap.sh
+./PerforceTypemap.sh
 ```
 
 Follow the instructions given by the script. Important information is written in red.
@@ -50,8 +49,7 @@ It would be nice if we did not have to use a command line interface for once, bu
 Start your CMD or terminal and enter the following:
 
 ```
-	p4 set P4IGNORE=.p4ignore
-
+p4 set P4IGNORE=.p4ignore
 ```
 **Every user has to run the above command on every machine he uses.**
 If this is not enough to please you, take a look at https://www.perforce.com/manuals/p4sag/Content/P4SAG/protections.set.html
