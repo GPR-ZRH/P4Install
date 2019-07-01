@@ -31,7 +31,7 @@ While it would be possible to create an fully automated script, this semi-automa
 When using a linux distro that has wget installed.
 
 ```
-wget public-URL-to-InstallScript
+wget https://raw.githubusercontent.com/GPR-ZRH/P4Install/master/PerforceInstall.sh
 chmod +x PerforceInstall.sh
 ./PerforceInstall.sh
 ```
@@ -75,7 +75,7 @@ Connect to the server again using PuTTY (Your previous connection went inactive 
 Login as before and run the following:
 
 ```
-wget public-URL-to-SecurityScript
+wget https://raw.githubusercontent.com/GPR-ZRH/P4Install/master/PerforceSecurity.sh
 chmod +x PerforceSecurity.sh
 ./PerforceSecurity.sh
 ```
