@@ -7,7 +7,7 @@ volumeName=""
 read volumeName
 
 #directory="/mnt/$volumeName"
-
+volumeName="${volumeName%%'*}"
 printf "Create a mount point for your volume at /mnt/$volumeName\n"
 mkdir -p "/mnt/$volumeName"
 
