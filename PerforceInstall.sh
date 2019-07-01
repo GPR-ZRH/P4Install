@@ -41,9 +41,15 @@ CreateDepot()
 	printf "\n\e[31mChoose a path for the depot. Or press enter to use /p4depot as the depot root path.\e[39m"
 	printf "\n\e[32m------------------- Input Section -------------------\e[39m\n"
 	read depotPath
-	if [ -z "$depotPath" ]
+	if [ -z "$depotPath" ] || [ ${#depotPath} -lt 3 ]
 	then
 		depotPath="/p4depot"
+	else
+		if [ ${depotPath:0:1} != "/" ]
+		then
+			depotPath="/"$depotPath
+		fi
+		
 	fi
 	printf "\n\e[32m---------------- End of Input Section ---------------\e[39m"
 
