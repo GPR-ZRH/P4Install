@@ -13,7 +13,7 @@ While it would be possible to create an fully automated script, this semi-automa
 ## DigitalOcean step-by-step guide
 
 There are multiple ways to test digitalocean if you are interested.
-- If you are able to get the github [student developer pack] (https://education.github.com/pack) you will get 50$ in credits.
+- If you are able to get the github [student developer pack](https://education.github.com/pack) you will get 50$ in credits.
 - If you can not get the student dev pack, you will be able to get 50$ (this credit only lasts 30 days and remaining credit will be removed, charging your paypal or credit card) by using a referral link: https://m.do.co/c/eacbb4c312b4
 This is my referral link and I will also get awarded 25$ in credits. I do not like to post such a link on a github repository, but I was not able to find a different way to provide the 50$ test credit without using any referral link. If anyone got a different method let me know so I can remove the referral link.
 - Directly (most likely) without any free credits: https://cloud.digitalocean.com/registrations/new
