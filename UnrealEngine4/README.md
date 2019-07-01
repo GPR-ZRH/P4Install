@@ -35,6 +35,8 @@ chmod +x PerforceTypemap.sh
 
 Follow the instructions given by the script. Important information is written in red.
 
+**Important: If you already had files in your workspace you will need to submit any changes, remove all the files and then get them from the depot again. Typemap does not automatically apply to already downloaded files in the workspace. Ignoring this can lead to weird problems!"
+
 ### 3. Setup Perforce ignore file
 You can now close PuTTY. You will not need it any longer in this guide.
 
@@ -56,6 +58,8 @@ If this is not enough to please you, take a look at https://www.perforce.com/man
 
 You can do the same as inside a p4ignore file, but on the server instead of each client.
 I might add a shell script at a later time.
+
+Add the ignore file to the depot by clicking "Add" in P4V and then submitting it. Everyone else will then use the same p4ignore file as soon as they get the latest files. 
 
 ### 4. Enjoy
 Have fun :)
