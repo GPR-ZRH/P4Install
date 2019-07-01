@@ -10,6 +10,6 @@ mkdir -p /mnt/$volumeName
 mount -o discard,defaults,noatime /dev/disk/by-id/scsi-0DO_Volume_$volumeName /mnt/$volumeName
 
 # Change fstab so the volume will be mounted after a reboot
-echo '/dev/disk/by-id/scsi-0DO_Volume_'$volumeName' /mnt/'$volumeName' ext4 defaults,nofail,discard 0 0' | sudo tee -a /etc/fstab
+echo "/dev/disk/by-id/scsi-0DO_Volume_$volumeName /mnt/$volumeName ext4 defaults,nofail,discard 0 0" | sudo tee -a /etc/fstab
 
 printf "\e[32mFinished setting up your volume. You may now proceed if no errors were thrown.\e[39m\n"
