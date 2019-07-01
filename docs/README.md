@@ -31,22 +31,21 @@ While it would be possible to create an fully automated script, this semi-automa
 When using a linux distro that has wget installed.
 
 ```
-    wget public-URL-to-InstallScript
-    chmod +x PerforceInstall.sh
-    ./PerforceInstall.sh
-
+wget public-URL-to-InstallScript
+chmod +x PerforceInstall.sh
+./PerforceInstall.sh
 ```
 
 If wget is not installed try the following:
 
 ```
-    apt-get install wget
+apt-get install wget
 ```
 
 or:
 
 ```
-    yum install wget
+yum install wget
 ```
 
 Follow the instructions given by the script. Important information is written in red.
@@ -76,10 +75,9 @@ Connect to the server again using PuTTY (Your previous connection went inactive 
 Login as before and run the following:
 
 ```
-    wget public-URL-to-SecurityScript
-    chmod +x PerforceSecurity.sh
-    ./PerforceSecurity.sh
-	
+wget public-URL-to-SecurityScript
+chmod +x PerforceSecurity.sh
+./PerforceSecurity.sh
 ```
 This will disallow automatic user creation, viewing of the available users and viewing of the configs.
 It will also ask you to decide upon the use of passwords vs tickets and if applicaple the password strength.
