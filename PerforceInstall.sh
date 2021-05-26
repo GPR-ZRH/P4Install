@@ -4,7 +4,7 @@
 DownloadPerforce() 
 {
 	printf "\e[31mPlease provide an ftp link to the perforce version you would like to install.\e[39m\nYou can find them here: ftp://ftp.perforce.com/perforce/"
-	printf "\nOr press \e[32mEnter\e[39m to use the following version: ftp://ftp.perforce.com/perforce/r19.1/bin.linux26x86_64/"
+	printf "\nOr press \e[32mEnter\e[39m to use the following version: ftp://ftp.perforce.com/perforce/r21.1/bin.linux26x86_64/"
 
 	printf "\n\e[32m------------------- Input Section -------------------\e[39m\n"
 
@@ -13,7 +13,7 @@ DownloadPerforce()
 		read sourceVar
 		if [ -z "$sourceVar" ] || [ ${#sourceVar} -lt 7 ] 
 		then
-			sourceVar=ftp://ftp.perforce.com/perforce/r19.1/bin.linux26x86_64/
+			sourceVar=ftp://ftp.perforce.com/perforce/r21.1/bin.linux26x86_64/
 			break
 		else
 			printf "Invalid Input. Try again!\n"			
