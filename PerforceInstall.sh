@@ -125,6 +125,7 @@ Finished()
 	else
 		printf "\n\e[32m\nMake sure to restart later!\e[39m\n"
 	fi
+	unlink PerforceInstall.sh
 }
 
 Reboot()

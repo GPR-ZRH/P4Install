@@ -30,9 +30,10 @@ While it would be possible to create an fully automated script, this semi-automa
 
 ### 2. Install Perforce
 When using a linux distro that has wget installed.
+You might need to use sudo in order to run these commands.
 
 ```
-wget https://raw.githubusercontent.com/GPR-ZRH/P4Install/master/PerforceInstall.sh
+wget -O https://raw.githubusercontent.com/GPR-ZRH/P4Install/master/PerforceInstall.sh
 chmod +x PerforceInstall.sh
 ./PerforceInstall.sh
 ```
