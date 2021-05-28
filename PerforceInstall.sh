@@ -107,9 +107,9 @@ SetupAutostart()
 #	else
 		echo "/usr/local/bin/p4d -r $depotPath -J /var/log/p4d.log" > "PerforceAutoStartServer"
 		chmod +x PerforceAutoStartServer
-		sudo mv PerforceAutoStartServer /usr/local/bin
+		sudo mv PerforceAutoStartServer /usr/bin
 		printf "\n\e[31mCreating cronjob that runs the startup script on reboot\e[39m"
-		echo "@reboot perforce /usr/local/bin/PerforceAutoStartServer" > "PerforceCronJob"
+		echo "@reboot perforce /usr/bin/PerforceAutoStartServer" > "PerforceCronJob"
 		chmod +x PerforceCronJob
 		sudo mv PerforceCronJob /etc/cron.d/
 #	fi
