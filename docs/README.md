@@ -33,7 +33,7 @@ When using a linux distro that has wget installed.
 You might need to use sudo in order to run these commands.
 
 ```
-wget -O https://raw.githubusercontent.com/GPR-ZRH/P4Install/master/PerforceInstall.sh
+wget -O PerforceInstall.sh https://raw.githubusercontent.com/GPR-ZRH/P4Install/master/PerforceInstall.sh
 chmod +x PerforceInstall.sh
 ./PerforceInstall.sh
 ```
@@ -78,7 +78,7 @@ Connect to the server again using PuTTY (Your previous connection went inactive 
 Login as before and run the following:
 
 ```
-wget -O https://raw.githubusercontent.com/GPR-ZRH/P4Install/master/PerforceSecurity.sh
+wget -O PerforceSecurity.sh https://raw.githubusercontent.com/GPR-ZRH/P4Install/master/PerforceSecurity.sh
 chmod +x PerforceSecurity.sh
 ./PerforceSecurity.sh
 ```
