@@ -39,6 +39,7 @@ AskSynology()
 		if [ "$synologyAnwser" = "y" ]
 			then
 			isSynology=true
+			break
 		else 
 			isSynology=false
 			break
