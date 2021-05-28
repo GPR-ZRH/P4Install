@@ -38,9 +38,9 @@ AskSynology()
 		read synologyAnwser
 		if [ "$synologyAnwser" = "y" ]
 			then
-			isSynology = true
+			isSynology=true
 		else 
-			isSynology = false
+			isSynology=false
 			break
 		fi
 	done
