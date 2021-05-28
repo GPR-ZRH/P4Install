@@ -144,6 +144,7 @@ Reboot()
 
 # Human readable process
 DownloadPerforce
+AskSynology
 CreateUser
 CreateDepot
 CreateLog
