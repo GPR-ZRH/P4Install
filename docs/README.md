@@ -69,6 +69,7 @@ If you already have other perforce servers setup in P4Admin and you find yoursel
 You will see yet another window pop-up clarifying that this user will become the sole superuser (Administrator / All rights)
 - Accept
 - Add any user you would like, create groups, assign permissions, etc.
+
 ![Perforce sole superuser window](/docs/images/P4Admin_SoleSuperuser.png)
 
 ### 4. Security measures
@@ -77,7 +78,7 @@ Connect to the server again using PuTTY (Your previous connection went inactive 
 Login as before and run the following:
 
 ```
-wget https://raw.githubusercontent.com/GPR-ZRH/P4Install/master/PerforceSecurity.sh
+wget -O https://raw.githubusercontent.com/GPR-ZRH/P4Install/master/PerforceSecurity.sh
 chmod +x PerforceSecurity.sh
 ./PerforceSecurity.sh
 ```
