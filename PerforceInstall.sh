@@ -97,22 +97,21 @@ CreateLog()
 SetupAutostart()
 {
 	printf "\n\e[31mCreating automatic startup script\e[39m"
-#	if [ "$isSynology" = true ]
-#	then
-#		echo "/usr/local/bin/p4d -r $depotPath -J /var/log/p4d.log" > "PerforceStartServer.sh"
-#		chmod +x PerforceStartServer.sh
-#		echo "/volume1/homes/admin/p4 -p localhost:1666 admin stop" > "PerforceStopServer.sh"
-#		chmod +x PerforceStopServer.sh
-
-#	else
+	if [ "$isSynology" = true ]
+	then
+		echo "/usr/local/bin/p4d -r $depotPath -J /var/log/p4d.log" > "PerforceStartServer"
+		chmod +x PerforceStartServer
+		sudo mv PerforceAutoStartServer /usr/local/etc/rc.d/PerforceAutoStartServer.sh
+		printf "\n\e[31mPlaced PerforceAutoStartServer.sh script in /usr/local/etc/rc.d to automatically start the perforce server when the Diskstation starts\e[39m"
+	else
 		echo "/usr/local/bin/p4d -r $depotPath -J /var/log/p4d.log" > "PerforceAutoStartServer"
 		chmod +x PerforceAutoStartServer
 		sudo mv PerforceAutoStartServer /usr/bin
 		printf "\n\e[31mCreating cronjob that runs the startup script on reboot\e[39m"
-		echo "@reboot perforce /usr/bin/PerforceAutoStartServer" > "PerforceCronJob"
+		echo "@reboot root /usr/bin/PerforceAutoStartServer" > "PerforceCronJob"
 		chmod +x PerforceCronJob
 		sudo mv PerforceCronJob /etc/cron.d/
-#	fi
+	fi
 }
 
 Finished()
