@@ -53,7 +53,7 @@ CreateUser()
 	then
 		printf "\n\e[31m\nCreating a new User called perforce as a security measure.\nPlease provide a password for the new user!\e[39m\n"
 		read perforceUserPassword
-		sudo synouser --add perforce $perforceUserPassword "perforce user" 0
+		sudo synouser --add perforce $perforceUserPassword "perforce user" 0 "" 0
 	else
 		printf "\n\e[31m\nCreating a new User called perforce as a security measure.\nPlease provide a password for the new user!\e[39m\n"
 		sudo adduser perforce -c "Perforce User, , , "
